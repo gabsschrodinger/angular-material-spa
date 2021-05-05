@@ -1,0 +1,45 @@
+<header id="home-header">
+  <div class="container" class="home-header">
+    <h1 id="home-title">Gabriel Fernandes Ribeiro</h1>
+    <h4 id="home-subtitle">Full Stack Developer</h4>
+  </div>
+</header>
+
+<main id="home-main">
+  <div class="container home-main">
+
+    <mat-card>
+      <mat-card-title>
+        <mat-icon>folder</mat-icon>
+        Some of my projects
+      </mat-card-title>
+      <mat-card-content> Find out about some of my projects in Java, Python, JavaScript and Angular. </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button [routerLink]="['/projects']">Go</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-title>
+        <mat-icon>moving</mat-icon>
+        My skills
+      </mat-card-title>
+      <mat-card-content> Find about my skills, courses and certifications. </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button [routerLink]="['/skills']">Go</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-title>
+        <mat-icon>info</mat-icon>
+        About me
+      </mat-card-title>
+      <mat-card-content> Find out about me and some things I like. </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button [routerLink]="['/about']">Go</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+</main>

@@ -1,0 +1,44 @@
+#skills-title {
+    text-align: center;
+}
+
+.container-skills {
+    background-color: #a29bfe;
+    padding-top: 5em;
+    min-height: calc(100vh - 5em);
+}
+
+#main-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+mat-card {
+    width: calc((100% / 4) - 15px - (var(--container) / 1.5));
+    background-color: #2d3436;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 15px;
+    transition: .5s;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-card:hover {
+    transform: translateY(-3px);
+}
+
+mat-card:nth-child(1), mat-card:nth-child(5), mat-card:nth-child(9) {
+    margin-left: 0;
+}
+
+mat-card-title {
+    text-align: center;
+}
+
+mat-progress-spinner {
+    margin-top: 20px;
+}

@@ -1,0 +1,34 @@
+#about-title {
+    text-align: center;
+}
+
+.container-about {
+    background-color: #a29bfe;
+    padding-top: 5em;
+    min-height: calc(100vh - 5em);
+}
+
+#main-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profile-pic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    width: 20%;
+    border-radius: 100%;
+}
+
+mat-card {
+    margin-bottom: 30px;
+    background-color: #2d3436;
+    color: #fff;
+    transition: .5s;
+}
+
+mat-card:hover {
+    transform: translateY(-3px);
+}

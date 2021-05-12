@@ -11,6 +11,7 @@
 #main-skills {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 mat-card {
@@ -41,4 +42,43 @@ mat-card-title {
 
 mat-progress-spinner {
     margin-top: 20px;
+}
+
+@media screen and (max-width: 890px) {
+    mat-card {
+        width: calc((100% / 3) - 15px - (var(--container) / 1.5));
+    }
+
+    mat-card:nth-child(1), mat-card:nth-child(4), mat-card:nth-child(7), mat-card:nth-child(10) {
+        margin-left: 0;
+    }
+
+    mat-card:nth-child(2), mat-card:nth-child(3), mat-card:nth-child(5), mat-card:nth-child(6), mat-card:nth-child(8), mat-card:nth-child(9), mat-card:nth-child(11), mat-card:nth-child(12) {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    mat-card {
+        width: calc((100% / 2) - 15px - (var(--container)));
+    }
+
+    mat-card:nth-child(1), mat-card:nth-child(3), mat-card:nth-child(5), mat-card:nth-child(7), mat-card:nth-child(9), mat-card:nth-child(11) {
+        margin-left: 0;
+    }
+
+    mat-card:nth-child(2), mat-card:nth-child(4), mat-card:nth-child(6), mat-card:nth-child(8), mat-card:nth-child(10), mat-card:nth-child(12) {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    mat-card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    mat-card:nth-child(2), mat-card:nth-child(4), mat-card:nth-child(6), mat-card:nth-child(8), mat-card:nth-child(10), mat-card:nth-child(12) {
+        margin-left: 0;
+    }
 }

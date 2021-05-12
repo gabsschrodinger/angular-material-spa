@@ -12,3 +12,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding-left: var(--container);
     padding-right: var(--container);
 }
+
+@media screen and (max-width: 450px) {
+    :root {
+        --container: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    :root {
+        --container: 1em;
+    }
+}
